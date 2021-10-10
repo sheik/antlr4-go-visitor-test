@@ -15,4 +15,10 @@ You can see the implementation of Visit functions in parser/expr_base_visitor.g
     9128
     calc>  
 
+*NOTE:* This is currently built using a custom version of ANTLR4, modified to output visitor structure for Golang (github.com/sheik/antlr4).
+If you wish to try it out you will need to check out the custom antlr4 and edit the go.mod replace statement to point Go at it. You will
+also need to build the custom antlr4 tool in order to run it.
+
+There is a PR for merging this into the official ANTLR4 repository here: https://github.com/antlr/antlr4/pull/3299
+
 
